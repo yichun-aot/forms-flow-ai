@@ -186,7 +186,7 @@ parameters:
   - name: TOOLS_WORKSPACE
     description: The location for your image streams (Tools Workspace).
     required: true
-    value: vmvfjv-dev
+    value: vmvfjv-tools
   - name: SMTP_SERVER
     description: The domain name of the SMTP server for sending emails.
     required: true
