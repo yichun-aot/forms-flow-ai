@@ -20,6 +20,7 @@ def create_app(run_mode=os.getenv('FLASK_ENV', 'production')):
     """Return a configured Flask App using the Factory method."""
     app = Flask(__name__)
     CORS(app)
+    app.config['CORS_HEADERS'] = 'Content-Type'
     app.config.from_object(config.CONFIGURATION[run_mode])
 
     db.init_app(app)
