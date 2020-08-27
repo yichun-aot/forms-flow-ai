@@ -93,7 +93,8 @@ podTemplate(
             dir('deployment/openshift/pipeline/sonar-runner') {
                 sh (
                     returnStdout: true,
-                    script: "./gradlew sonarqube --stacktrace --info \
+                    script: "chmod +x gradlew \
+                        ./gradlew sonarqube --stacktrace --info \
                         -Dsonar.verbose=true \
                         -Dsonar.host.url=${SONARQUBE_URL} \
                         -Dsonar.projectName='${SONAR_PROJECT_NAME}' \
