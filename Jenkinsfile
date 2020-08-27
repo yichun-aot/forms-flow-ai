@@ -90,7 +90,7 @@ podTemplate(
             echo "PWD: ${SONARQUBE_PWD}"
             echo "URL: ${SONARQUBE_URL}"
 
-            dir('deployment/openshift/pipeline/sonar-runner') {
+            dir('sonar-runner') {
                 sh (
                     returnStdout: true,
                     script: "./gradlew sonarqube --stacktrace --info \
