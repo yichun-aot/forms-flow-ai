@@ -10,7 +10,7 @@ sonarqube {
         property "sonar.projectName", "formsflow-ai"
         property "sonar.projectKey", "formsflow-ai"
         property "sonar.projectBaseDir", "../"
-        property "sonar.sources", "./forms-flow-web/src, ./forms-flow-api/src/api"
+        property "sonar.sources", "."
         property "sonar.exclusions", "**/test_*.py"
         property "sonar.verbose", "true"
         property "sourceEncoding", "UTF-8"
