@@ -75,7 +75,7 @@ podTemplate(
             SONAR_PROJECT_NAME = 'formsflow-ai'
             SONAR_PROJECT_KEY = 'formsflow-ai'
             SONAR_PROJECT_BASE_DIR = '../'
-            SONAR_SOURCES = './forms-flow-web/src'
+            SONAR_SOURCES = './forms-flow-web/src, ./forms-flow-api/src/api'
 
             SONARQUBE_PWD = sh (
                 script: 'oc set env dc/sonarqube --list | awk  -F  "=" \'/SONARQUBE_ADMINPW/{print $2}\'',
